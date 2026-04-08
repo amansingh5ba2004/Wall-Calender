@@ -1,0 +1,50 @@
+.strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 28px 14px;
+  border-top: 1px solid #f0f0f0;
+}
+.themeDots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.themeLabel {
+  font-size: 10px;
+  color: #aaa;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.15s, border-color 0.15s;
+}
+.dot:hover {
+  transform: scale(1.2);
+}
+.dot.active {
+  border-color: #333;
+  transform: scale(1.15);
+}
+.clearBtn {
+  font-size: 11px;
+  color: #bbb;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 0.5px;
+  transition: color 0.15s;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.clearBtn:hover {
+  color: #e05d2b;
+  background: #fff5f0;
+}

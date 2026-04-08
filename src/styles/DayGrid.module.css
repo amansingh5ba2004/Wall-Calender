@@ -1,0 +1,91 @@
+.gridSection {
+  padding-right: 24px;
+}
+.dayHeaders {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 6px;
+}
+.dayHeader {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding: 4px 0;
+  color: #888;
+}
+.dayHeader.weekend {
+  color: var(--accent);
+}
+.dayGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+.dayCell {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.15s, transform 0.1s;
+  user-select: none;
+}
+.dayCell:hover:not(.ghost) {
+  transform: scale(1.08);
+}
+.ghost {
+  color: #ccc;
+  cursor: default;
+}
+.ghost:hover {
+  transform: none;
+}
+.dayNum {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  font-family: 'DM Mono', monospace;
+  position: relative;
+  z-index: 1;
+}
+.today .dayNum {
+  background: var(--text);
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.weekendDay .dayNum {
+  color: var(--accent);
+}
+.endpoint {
+  background: var(--accent);
+  border-radius: 8px;
+}
+.endpoint .dayNum {
+  color: white;
+  font-weight: 700;
+}
+.range {
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+  border-radius: 0;
+}
+.holidayDot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  position: absolute;
+  bottom: 3px;
+}
+.endpoint .holidayDot {
+  background: white;
+}
