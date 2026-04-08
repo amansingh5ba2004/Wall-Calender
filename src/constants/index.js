@@ -27,6 +27,7 @@ export const HOLIDAYS = {
   "4-22": "Earth Day",
   "5-1":  "Labour Day",
   "6-21": "Summer Solstice",
+  "6-1": "Developer's Birthday",
   "7-4":  "Independence Day",
   "8-15": "Assumption Day",
   "9-22": "Autumn Equinox",
